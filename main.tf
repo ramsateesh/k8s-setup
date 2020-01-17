@@ -10,7 +10,7 @@ resource "google_compute_instance" "default" {
   machine_type = "n1-standard-1"
   zone         = "australia-southeast1"
 
-  tags = ["foo", "bar"]
+  tags = ["foo", "test"]
 
   boot_disk {
     initialize_params {
