@@ -2,8 +2,8 @@ name: 'CI for Setting up k8s cluster'
 on:
   - pull_request
 jobs:
-  terraform:
-    name: 'Terraform'
+  build:
+    name: 'Init - Validate - Plan'
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
