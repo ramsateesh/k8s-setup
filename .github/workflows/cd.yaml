@@ -42,8 +42,12 @@ jobs:
     name: 'Apply'
     runs-on: ubuntu-latest
     steps:
+      - name: 'Checkout'
+        uses: actions/checkout@master
       - name: 'Terraform Apply'
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 0.12.13
           tf_actions_subcommand: 'apply'
+        env:
+          GITHUB_TOKEN: ${{ secrets.token }}
