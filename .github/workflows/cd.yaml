@@ -59,3 +59,8 @@ jobs:
           tf_actions_subcommand: 'apply'
         env:
           GITHUB_TOKEN: ${{ secrets.token }}
+          GCP_PRIVATE_KEY_ID: ${{ secrets.gcp_private_key_id }}
+          GCP_PRIVATE_KEY: ${{ secrets.gcp_private_key }}
+          GCP_CLIENT_EMAIL: ${{ secrets.gcp_client_email }}
+          GCP_CLIENT_ID: ${{ secrets.gcp_client_id }}
+          GCP_CLIENT_X509_CERT_URL: ${{ secrets.gcp_client_x509_cert_url }}
